@@ -31,23 +31,32 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 2. **Extract each downloaded zip file**:
    - Each zip contains a root folder named `devkitBase` - **ignore this folder**
    - Extract the **contents** of `devkitBase` directly into version-specific folders
+   - For Maya 2025 going forward, you need to extract the included Qt.zip into the root folder
+   - For all other versions, there will be qt zip files inside the `cmake`, `include`, and `mkspecs` folders you need to extract them to compile Qt plugins.
 
 3. **Your final structure should look like this**:
    ```
    C:\MayaDevKits\
    ├── 2019\
-   │   ├── cmake\
+   │   ├── cmake\ (extract qt-5.6.1_vc14-cmake.zip contents here from included zip file)
    │   ├── devkit\
-   │   ├── include\
+   │   ├── include\ (extract qt-5.6.1_vc14-include.zip contents here from included zip file)
    │   ├── lib\
-   │   └── mkspecs\
+   │   └── mkspecs\ (extract qt-5.6.1_vc14-mkspecs contents here from included zip file)
    ├── 2020\
    ├── 2022\
    ├── 2023\
    ├── 2024\
    ├── 2025\
+      │   ├── cmake\
+      │   ├── devkit\
+      │   ├── include\
+      │   ├── lib\
+      │   └── mkspecs\
+      │   └── Qt\ (extract this folder from included Qt.zip)
    ├── 2026\
-   └── build_script.bat  (place the batch script here)
+   └── build_maya_cpp_plugin.bat  (for c++ plugins only)
+   └── build_maya_cpp_qt_plugin.bat  (for any plugin, including c++ and/or Qt)
    ```
 
 ## 🚀 Building Plugins
