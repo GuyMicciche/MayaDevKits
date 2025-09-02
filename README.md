@@ -55,7 +55,6 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
    │   └── mkspecs\
    │   └── Qt\ (extract this folder from included Qt.zip)
    ├── 2026\
-   └── build_maya_cpp_plugin.bat  (for c++ plugins only)
    └── build_maya_cpp_qt_plugin.bat  (for any plugin, including c++ and/or Qt)
    ```
 
