@@ -38,11 +38,11 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
    ```
    C:\MayaDevKits\
    ├── 2019\
-   │   ├── cmake\ (extract qt-5.6.1_vc14-cmake.zip contents here from included zip file)
+   │   ├── cmake\ (extract included qt-5.6.1_vc14-cmake.zip contents here)
    │   ├── devkit\
-   │   ├── include\ (extract qt-5.6.1_vc14-include.zip contents here from included zip file)
+   │   ├── include\ (extract included qt-5.6.1_vc14-include.zip contents here)
    │   ├── lib\
-   │   └── mkspecs\ (extract qt-5.6.1_vc14-mkspecs contents here from included zip file)
+   │   └── mkspecs\ (extract included qt-5.6.1_vc14-mkspecs contents here)
    ├── 2020\
    ├── 2022\
    ├── 2023\
