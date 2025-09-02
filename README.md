@@ -5,12 +5,12 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 ## 🛠️ Prerequisites
 
 ### Required Software
-1. **Visual Studio 2022** (any edition: Community, Professional, or Enterprise)
+1. **Visual Studio 2022** (any edition: Community, Professional, or Enterprise) [Download Visual Studio](https://visualstudio.microsoft.com/downloads/)
    - During installation, ensure you select: **"Desktop development with C++"** workload
    - This includes the necessary MSVC compiler and Windows SDK components
    - CMake comes with VS2022, but you might want to download it and add it to your PATH environment variable [Download CMake](https://cmake.org/download/)
 
-2. **Autodesk Maya** (any supported version 2019-2026)
+2. **Autodesk Maya** (any supported version 2019-2026) [Download Maya](https://www.autodesk.com/products/maya/overview)
    - Required for testing your compiled plugins
 
 ## 📥 Getting Started
