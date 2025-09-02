@@ -106,7 +106,7 @@ If you prefer manual building:
 ```cmd
 # Open x64 Native Tools Command Prompt for VS 2022
 cd path\to\your\plugin
-C:\MayaDevKits\2024\devkit\bin\qmake your_plugin.pro
+"C:/MayaDevKits/2024/devkit/bin/qmake.exe" your_plugin.pro
 nmake release
 ```
 
