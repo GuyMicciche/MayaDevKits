@@ -66,12 +66,13 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 - You'll find various sample plugins (e.g., `helixQtCmd`, `helloWorld`, etc.)
 
 ### Step 2: Compile Plugins Automatically
-1. **Drag and drop** any plugin folder onto the `build_script.bat` file
+1. **Drag and drop** any plugin folder onto the `build_maya_cpp_qt_plugin.bat` file
 2. The script will automatically:
    - Detect if it's a Qt plugin (looks for `.pro` files)
    - Set up the Visual Studio environment
    - Compile the plugin for all available Maya versions
    - Output `.mll` files to `[plugin_folder]\build\[version]\plug-ins\`
+   - Copy any `.mel` files to `[plugin_folder]\build\[version]\scripts\`
 
 ### Step 3: Install and Test
 1. Copy the generated `.mll` files to Maya's plugin directory:
