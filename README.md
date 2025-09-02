@@ -32,7 +32,7 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
    - Each zip contains a root folder named `devkitBase` - **ignore this folder**
    - Extract the **contents** of `devkitBase` directly into version-specific folders
    - For Maya 2025 going forward, you need to extract the included `Qt.zip` into the root folder
-   - For all other versions, there will be qt zip files inside the `cmake`, `include`, and `mkspecs` folders you need to extract them to compile Qt plugins.
+   - For all other versions, there will be qt zip files inside the `cmake`, `include`, and `mkspecs` folders you need to extract them to compile plugins that use Qt.
 
 3. **Your final structure should look like this**:
    ```
