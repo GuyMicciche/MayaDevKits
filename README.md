@@ -1,4 +1,4 @@
-# Autodesk Maya DevKits - Automated Plugin Development
+# Autodesk Maya DevKits - Automated Plugin Compiling
 
 Streamlined development and compilation of **C++**, **Qt**, **Python**, and **PyQt** plugins for Autodesk Maya across multiple versions (2019-2026).
 
