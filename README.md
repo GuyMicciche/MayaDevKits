@@ -43,17 +43,17 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
    │   ├── include\ (extract included qt-5.6.1_vc14-include.zip contents here)
    │   ├── lib\
    │   └── mkspecs\ (extract included qt-5.6.1_vc14-mkspecs contents here)
-   ├── 2020\
+   ├── 2020\ 
    ├── 2022\
    ├── 2023\
    ├── 2024\
    ├── 2025\
-      │   ├── cmake\
-      │   ├── devkit\
-      │   ├── include\
-      │   ├── lib\
-      │   └── mkspecs\
-      │   └── Qt\ (extract this folder from included Qt.zip)
+   │   ├── cmake\
+   │   ├── devkit\
+   │   ├── include\
+   │   ├── lib\
+   │   └── mkspecs\
+   │   └── Qt\ (extract this folder from included Qt.zip)
    ├── 2026\
    └── build_maya_cpp_plugin.bat  (for c++ plugins only)
    └── build_maya_cpp_qt_plugin.bat  (for any plugin, including c++ and/or Qt)
