@@ -102,16 +102,18 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 If you prefer manual building:
 
 **For Qt plugins (Maya 2024 and earlier):**
+Make sure all directories have back-slashes
 ```cmd
-# Open Developer Command Prompt for Visual Studio
+# Open x64 Native Tools Command Prompt for VS 2022
 cd path\to\your\plugin
 C:\MayaDevKits\2024\devkit\bin\qmake your_plugin.pro
 nmake release
 ```
 
 **For all plugins (Maya 2025+):**
+Make sure all directories have back-slashes
 ```cmd
-cmake -H"source_dir" -B"build_dir" -G "Visual Studio 17 2022" -DMAYA_VERSION=2025
+cmake -H"source_dir" -B"build_dir" -G "Visual Studio 17 2022" -DMAYA_VERSION=2025 -DMAYA_DEVKIT="devkit_dir" -DCMAKE_INSTALL_PREFIX="output_dir"
 cmake --build "build_dir" --config Release
 ```
 
