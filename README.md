@@ -1,8 +1,19 @@
 # Autodesk Maya DevKits - Automated Plugin Compiling
 
-Streamlined development and compilation of **C++**, **Qt**, **Python**, and **PyQt** plugins for Autodesk Maya across multiple versions (2019-2026).
+Streamlined development and compilation of **C++**, **Qt**, **Python**, and **PyQt** plugins for Autodesk Maya across multiple versions (2019-2027).
 
-## 🛠️ Prerequisites
+## Maya API Update Guides
+- [Maya devkit—What’s New / What’s Changed](https://help.autodesk.com/view/MAYADEV/2027/ENU/?guid=Maya_DEVHELP_Whats_New_Whats_Changed_html)
+- [Maya 2027 API Update Guide](https://blog.autodesk.io/maya-2027-api-update-guide/)
+- [Maya 2026 API Update Guide](https://blog.autodesk.io/maya-2026-api-update-guide/)
+- [Maya 2025 API Update Guide](https://blog.autodesk.io/maya-2025-api-update-guide/)
+- [Maya 2024 API Update Guide](https://blog.autodesk.io/maya-2024-api-update-guide/)
+- [Maya 2023 API Update Guide](https://blog.autodesk.io/maya-2023-api-update-guide/)
+- [Maya 2022 API Update Guide](https://blog.autodesk.io/maya-2022-api-update-guide/)
+- [Maya 2021 API Update Guide](https://blog.autodesk.io/maya-2021-api-update-guide/)
+- [Maya 2020 API Update Guide](https://blog.autodesk.io/maya-2020-api-update-guide/)
+
+## Prerequisites
 
 ### Required Software
 1. **Visual Studio 2022** (any edition: Community, Professional, or Enterprise) [Download Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
@@ -10,10 +21,10 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
    - This includes the necessary MSVC compiler and Windows SDK components
    - CMake comes with VS2022, but you might want to download it and add it to your PATH environment variable [Download CMake Windows x64 Installer](https://cmake.org/download/)
 
-2. **Autodesk Maya** (any supported version 2019-2026) [Download Maya](https://www.autodesk.com/products/maya/overview)
+2. **Autodesk Maya** (any supported version 2019-2027) [Download Maya](https://www.autodesk.com/products/maya/overview)
    - Required for testing your compiled plugins
 
-## 📥 Getting Started
+## Getting Started
 
 ### Step 1: Download Maya DevKits
 
@@ -38,28 +49,29 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 3. **Your final structure should look like this**:
    ```
    C:\MayaDevKits\
-   ├── 2019\
+   ├── 2019\ (Qt 5.6.1)
    │   ├── cmake\ (extract included qt-5.6.1_vc14-cmake.zip contents here)
    │   ├── devkit\
    │   ├── include\ (extract included qt-5.6.1_vc14-include.zip contents here)
    │   ├── lib\
    │   └── mkspecs\ (extract included qt-5.6.1_vc14-mkspecs contents here)
-   ├── 2020\ 
-   ├── 2022\
-   ├── 2023\
-   ├── 2024\
-   ├── 2025\
+   ├── 2020\ (Qt 5.12.3)
+   ├── 2022\ (Qt 5.15.2)
+   ├── 2023\ (Qt 5.15.2)
+   ├── 2024\ (Qt 5.15.2)
+   ├── 2025\ (Qt 6.5.3)
    │   ├── cmake\
    │   ├── devkit\
    │   ├── include\
    │   ├── lib\
    │   └── mkspecs\
    │   └── Qt\ (extract this folder from included Qt.zip)
-   ├── 2026\
+   ├── 2026\ (Qt 6.5.3)
+   ├── 2027\ (Qt 6.8.3)
    └── build_maya_cpp_qt_plugin.bat  (for any plugin, including c++ and/or Qt)
    ```
 
-## 🚀 Building Plugins
+## Building Plugins
 
 ### Step 1: Locate Sample Plugins
 - Navigate to any version folder: `C:\MayaDevKits\[VERSION]\devkit\plug-ins\`
@@ -86,16 +98,16 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
    cmds.loadPlugin("your_plugin.mll")
    ```
 
-## 📁 Project Types Supported
+## Project Types Supported
 
 | Type | Description | Build Method | Maya Versions |
 |------|-------------|--------------|---------------|
-| **C++ Plugins** | Standard Maya API plugins | CMake | All (2019-2026) |
-| **Qt Plugins** | Plugins with Qt GUI components | qmake (≤2024), CMake (≥2025) | All (2019-2026) |
-| **Python Plugins** | Pure Python scripts | Copy only | All (2019-2026) |
-| **PyQt Plugins** | Python with Qt interface | Copy only | All (2019-2026) |
+| **C++ Plugins** | Standard Maya API plugins | CMake | All (2019-2027) |
+| **Qt Plugins** | Plugins with Qt GUI components | qmake (≤2024), CMake (≥2025) | All (2019-2027) |
+| **Python Plugins** | Pure Python scripts | Copy only | All (2019-2027) |
+| **PyQt Plugins** | Python with Qt interface | Copy only | All (2019-2027) |
 
-## 🔧 Advanced Usage
+## Advanced Usage
 
 ### Manual Build Commands
 
@@ -113,7 +125,7 @@ nmake release
 **For all plugins (Maya 2025+):**
 - Make sure all directories have back-slashes
 ```cmd
-cmake -H"source_dir" -B"build_dir" -G "Visual Studio 17 2022" -DMAYA_VERSION=2025 -DMAYA_DEVKIT="devkit_dir" -DCMAKE_INSTALL_PREFIX="output_dir"
+cmake -H"source_dir" -B"build_dir" -G "Visual Studio 17 2022" -DMAYA_VERSION=2027 -DMAYA_DEVKIT="devkit_dir" -DCMAKE_INSTALL_PREFIX="output_dir"
 cmake --build "build_dir" --config Release
 ```
 
@@ -128,7 +140,7 @@ rmdir /s /q release debug
 rmdir /s /q build
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -152,19 +164,19 @@ rmdir /s /q build
 - **Community Forums**: [Autodesk Maya Programming Forum](https://forums.autodesk.com/t5/maya-programming-forum/bd-p/area-maya-programming)
 - **Issue Tracker**: Create issues in this repository for build script problems
 
-## 📋 System Requirements
+## System Requirements
 
 | Component | Requirement |
 |-----------|-------------|
 | **OS** | Windows 10/11 (64-bit) |
 | **Compiler** | Visual Studio 2019/2022 |
 | **Architecture** | x64 only |
-| **Maya Versions** | 2019, 2020, 2022, 2023, 2024, 2025, 2026 |
+| **Maya Versions** | 2019, 2020, 2022, 2023, 2024, 2025, 2026, 2027 |
 | **Disk Space** | ~2GB per Maya version DevKit |
 
 ---
 
-## 📄 License
+## License
 
 This build system is provided as-is. Maya DevKits are licensed under the [Autodesk License Agreement](https://www.autodesk.com/company/legal-notices-trademarks/software-license-agreements). A valid Maya license is required for plugin development and distribution.
 
