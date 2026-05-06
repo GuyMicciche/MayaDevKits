@@ -1,6 +1,6 @@
 # Autodesk Maya DevKits - Automated Plugin Compiling
 
-Streamlined development and compilation of **C++**, **Qt**, **Python**, and **PyQt** plugins for Autodesk Maya across multiple versions (2019-2027).
+Streamlined development and compilation of **C++**, **Qt**, **Python**, and **PyQt** plugins for Autodesk Maya across multiple versions (2020-2027).
 
 ## Maya API Update Guides
 - [Maya devkit—What’s New / What’s Changed](https://help.autodesk.com/view/MAYADEV/2027/ENU/?guid=Maya_DEVHELP_Whats_New_Whats_Changed_html)
@@ -21,7 +21,7 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
    - This includes the necessary MSVC compiler and Windows SDK components
    - CMake comes with VS2022, but you might want to download it and add it to your PATH environment variable [Download CMake Windows x64 Installer](https://cmake.org/download/)
 
-2. **Autodesk Maya** (any supported version 2019-2027) [Download Maya](https://www.autodesk.com/products/maya/overview)
+2. **Autodesk Maya** (any supported version 2020-2027) [Download Maya](https://www.autodesk.com/products/maya/overview)
    - Required for testing your compiled plugins
 
 ## Getting Started
@@ -49,13 +49,12 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 3. **Your final structure should look like this**:
    ```
    C:\MayaDevKits\
-   ├── 2019\ (Qt 5.6.1)
-   │   ├── cmake\ (extract included qt-5.6.1_vc14-cmake.zip contents here)
-   │   ├── devkit\
-   │   ├── include\ (extract included qt-5.6.1_vc14-include.zip contents here)
-   │   ├── lib\
-   │   └── mkspecs\ (extract included qt-5.6.1_vc14-mkspecs contents here)
    ├── 2020\ (Qt 5.12.3)
+   │   ├── cmake\ (extract included qt-5.12.3_vc14-cmake.zip contents here)
+   │   ├── devkit\
+   │   ├── include\ (extract included qt-5.12.3_vc14-include.zip contents here)
+   │   ├── lib\
+   │   └── mkspecs\ (extract included qt-5.12.3_vc14-mkspecs contents here)
    ├── 2022\ (Qt 5.15.2)
    ├── 2023\ (Qt 5.15.2)
    ├── 2024\ (Qt 5.15.2)
@@ -102,10 +101,10 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 
 | Type | Description | Build Method | Maya Versions |
 |------|-------------|--------------|---------------|
-| **C++ Plugins** | Standard Maya API plugins | CMake | All (2019-2027) |
-| **Qt Plugins** | Plugins with Qt GUI components | qmake (≤2024), CMake (≥2025) | All (2019-2027) |
-| **Python Plugins** | Pure Python scripts | Copy only | All (2019-2027) |
-| **PyQt Plugins** | Python with Qt interface | Copy only | All (2019-2027) |
+| **C++ Plugins** | Standard Maya API plugins | CMake | All (2020-2027) |
+| **Qt Plugins** | Plugins with Qt GUI components | qmake (≤2024), CMake (≥2025) | All (2020-2027) |
+| **Python Plugins** | Pure Python scripts | Copy only | All (2020-2027) |
+| **PyQt Plugins** | Python with Qt interface | Copy only | All (2020-2027) |
 
 ## Advanced Usage
 
@@ -160,7 +159,7 @@ rmdir /s /q build
 
 ### Getting Help
 
-- **Official Documentation**: [Maya Developer Help Center](https://help.autodesk.com/view/MAYADEV/2026/ENU/)
+- **Official Documentation**: [Maya Developer Help Center](https://help.autodesk.com/view/MAYADEV/2027/ENU/)
 - **Community Forums**: [Autodesk Maya Programming Forum](https://forums.autodesk.com/t5/maya-programming-forum/bd-p/area-maya-programming)
 - **Issue Tracker**: Create issues in this repository for build script problems
 
@@ -171,7 +170,7 @@ rmdir /s /q build
 | **OS** | Windows 10/11 (64-bit) |
 | **Compiler** | Visual Studio 2019/2022 |
 | **Architecture** | x64 only |
-| **Maya Versions** | 2019, 2020, 2022, 2023, 2024, 2025, 2026, 2027 |
+| **Maya Versions** | 2020, 2022, 2023, 2024, 2025, 2026, 2027 |
 | **Disk Space** | ~2GB per Maya version DevKit |
 
 ---
