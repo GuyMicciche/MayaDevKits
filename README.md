@@ -115,7 +115,7 @@ If you prefer manual building:
 - Make sure all directories have back-slashes
 ```cmd
 # Open x64 Native Tools Command Prompt for VS 2022
-cd path\to\your\plugin
+cd path/to/your/plugin
 "C:/MayaDevKits/2024/devkit/bin/qmake.exe" your_plugin.pro
 nmake release
 ```
@@ -178,4 +178,4 @@ rmdir /s /q build
 
 This build system is provided as-is. Maya DevKits are licensed under the [Autodesk License Agreement](https://www.autodesk.com/company/legal-notices-trademarks/software-license-agreements). A valid Maya license is required for plugin development and distribution.
 
-**Happy plugin development! 🎉**
+**Happy plugin development!**
