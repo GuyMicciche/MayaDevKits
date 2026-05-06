@@ -30,7 +30,7 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 1. Visit the **official Maya Developer Center**: https://aps.autodesk.com/developer/overview/maya
 2. Scroll to the bottom of the page to find the **DevKit packages**
 3. Download the **Windows DevKit** for each Maya version you want to support
-4. You'll need an Autodesk account (free registration) to access the downloads
+4. You’ll need an Autodesk account (free registration) to access the downloads
 
 ### Step 2: Set Up DevKit Directory Structure
 
@@ -73,25 +73,25 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 
 ### Step 1: Locate Sample Plugins
 - Navigate to any version folder: `C:\MayaDevKits\[VERSION]\devkit\plug-ins\`
-- You'll find various sample plugins (e.g., `helixQtCmd`, `helloWorld`, etc.)
+- You’ll find various sample plugins (e.g., `helixQtCmd`, `helloWorld`, etc.)
 
 ### Step 2: Compile Plugins Automatically
 1. **Drag and drop** any plugin folder onto the `build_maya_cpp_qt_plugin.bat` file
 2. The script will automatically:
-   - Detect if it's a Qt plugin (looks for `.pro` files)
+   - Detect if it’s a Qt plugin (looks for `.pro` files)
    - Set up the Visual Studio environment
    - Compile the plugin for all available Maya versions
    - Output `.mll` files to `[plugin_folder]\build\[version]\plug-ins\`
    - Copy any `.mel` files to `[plugin_folder]\build\[version]\scripts\`
 
 ### Step 3: Install and Test
-1. Copy the generated `.mll` files to Maya's plugin directory:
+1. Copy the generated `.mll` files to Maya’s plugin directory:
    ```
    C:\Users\[Username]\Documents\maya\[version]\plug-ins\
    ```
 2. Open Maya and load the plugin:
    ```python
-   # In Maya's Script Editor
+   # In Maya’s Script Editor
    import maya.cmds as cmds
    cmds.loadPlugin("your_plugin.mll")
    ```
@@ -150,11 +150,11 @@ rmdir /s /q build
 - **Solution**: Maya requires 64-bit builds. Use `vcvars64.bat`, not `vcvars32.bat`
 
 **❌ Plugin fails to load in Maya**
-- **Solution**: Ensure you're using the correct Maya version's DevKit
+- **Solution**: Ensure you’re using the correct Maya version’s DevKit
 - Check that all dependencies are properly linked
 
 **❌ Qt-related linking errors**
-- **Solution**: For Maya 2024 and earlier, use the DevKit's qmake instead of system Qt
+- **Solution**: For Maya 2024 and earlier, use the DevKit’s qmake instead of system Qt
 
 ### Getting Help
 
