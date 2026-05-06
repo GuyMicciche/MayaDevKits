@@ -10,7 +10,6 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 - [Maya 2024 API Update Guide](https://blog.autodesk.io/maya-2024-api-update-guide/)
 - [Maya 2023 API Update Guide](https://blog.autodesk.io/maya-2023-api-update-guide/)
 - [Maya 2022 API Update Guide](https://blog.autodesk.io/maya-2022-api-update-guide/)
-- [Maya 2021 API Update Guide](https://blog.autodesk.io/maya-2021-api-update-guide/)
 - [Maya 2020 API Update Guide](https://blog.autodesk.io/maya-2020-api-update-guide/)
 
 ## Prerequisites
@@ -43,8 +42,8 @@ Streamlined development and compilation of **C++**, **Qt**, **Python**, and **Py
 2. **Extract each downloaded zip file**:
    - Each zip contains a root folder named `devkitBase` - **ignore this folder**
    - Extract the **contents** of `devkitBase` directly into version-specific folders
-   - For Maya 2025 going forward, you need to extract the included `Qt.zip` into the root folder
-   - For all other versions, there will be qt zip files inside the `cmake`, `include`, and `mkspecs` folders you need to extract them to compile plugins that use Qt.
+   - For Maya 2027/2026/2025, you need to extract the included `Qt.zip` into the root folder
+   - For Maya 2024/2023/2022/2020, there will be qt zip files inside the `cmake`, `include`, and `mkspecs` folders you need to extract them to compile plugins that use Qt.
 
 3. **Your final structure should look like this**:
    ```
