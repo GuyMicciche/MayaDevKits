@@ -123,6 +123,7 @@ nmake release
 **For all plugins (Maya 2025+):**
 - Make sure all directories have back-slashes
 ```cmd
+# Open x64 Native Tools Command Prompt for VS 2022
 cmake -H"source_dir" -B"build_dir" -G "Visual Studio 17 2022" -DMAYA_VERSION=2027 -DMAYA_DEVKIT="devkit_dir" -DCMAKE_INSTALL_PREFIX="output_dir"
 cmake --build "build_dir" --config Release
 ```
